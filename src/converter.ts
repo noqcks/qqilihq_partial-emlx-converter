@@ -11,7 +11,7 @@ import * as Debug from 'debug';
 const debug = Debug('converter');
 
 export async function processEmlxs(inputDir: string, outputDir: string, ignoreErrors?: boolean): Promise<void> {
-  const files = await util.promisify(glob)('**/*.emlx', { cwd: inputDir });
+  const files = await util.promisify(glob as unknown as Function)('**/*.emlx', { cwd: inputDir });
   const bar = new ProgressBar('Converting [:bar] :percent :etas :file', { total: files.length, width: 40 });
   for (const file of files) {
     bar.tick({ file });
