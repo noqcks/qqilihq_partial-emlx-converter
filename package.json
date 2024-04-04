@@ -36,7 +36,7 @@
     "debug": "^4.3.3",
     "glob": "^7.2.0",
     "mailsplit": "^5.4.0",
-    "patch-package": "^6.4.7",
+    "patch-package": "^8.0.0",
     "postinstall-postinstall": "^2.1.0",
     "progress": "^2.0.3"
   },
